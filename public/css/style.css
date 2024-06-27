@@ -1,0 +1,140 @@
+body {
+    background-color:aliceblue;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100vh;
+}
+.nav {
+    text-decoration: none;
+    margin: 1%;
+    color: black;
+    font-weight: 600;
+}
+
+#icon {
+    color :#fe424d;
+    font-size:2rem;
+}
+
+.main {
+    position:fixed;
+    background-color:aliceblue;
+    padding-bottom: 4px;
+    width: 90%;
+
+}
+.nav1:hover{
+    border: 1px solid #fe424d;
+    border-radius: 1px;
+}
+.render-cont {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    a {
+        text-decoration: none;
+        color: #343!important;
+    }
+}
+.footer {
+    background-color:aliceblue;
+    padding: 1rem;
+    text-align: center;
+    
+}
+.inner {
+    margin-left: 2rem;
+}
+
+#main_cont a span {
+    font-weight: 600;
+}
+.fa-brands {
+    margin-left: 1rem;
+    font-size: 1.5 rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    border-radius: 4%;
+    aspect-ratio: 1;
+
+}
+#tit-country {
+    font-weight:600;
+}
+
+.del {
+    position: relative;
+    left:21%;
+    top: -28px;
+    padding: 0.5% 1% 0.5% 1%;
+    background-color:black;
+    border-radius: 4px;
+    color: white;
+}
+
+/* New Page */
+
+.input {
+    width: 80%;
+}
+.new {
+    margin-left: 8%;
+}
+
+#newBtn {
+    border: none !important;
+    padding: 0.5% 1% 0.5% 1%;
+    background-color: #fe424d !important;
+    border-radius: 4px;
+    color: white;
+}
+#heading {
+    margin-left: 30%;
+}
+
+#newBtn:hover {
+    color:blueviolet;
+    cursor: pointer;
+}
+#dis {
+    resize: none;
+}
+#radius {
+    border-radius: 7%;
+    width: 45%;
+}
+
+#radius div {
+    width: 100%;
+    
+}
+
+#radius img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.text p {
+    margin: 0 !important;
+}
+
+#list_head {
+    margin-left: 20%;
+}
+#edit {
+    text-decoration: none;
+    color:white;
+}
+
+#edit:hover {
+    color:blueviolet;
+}
+
+.del:hover {
+    background-color: #fe424d
+}

@@ -1,0 +1,48 @@
+<%layout("/layouts/boilerplate.ejs")%>
+<body>
+    <h3 class="new" id="heading">Create a new listing</h3>
+    <div class="new">
+    <form method="Post" action="/listings">
+     <div>
+        <label for="title">Title</label>
+        <br>
+        <input name="listing[title]" type="text" class="input" placeholder="Add a catcy tille">
+    </div>
+        <br>
+    <div>
+        <label for="discription">Write Description</label>
+        <br>
+        <textarea type="text" name="listing[discription]" class="input" id="dis"></textarea> 
+    </div>
+        <br>
+    <div>
+        <label for="image">Image Link</label>
+        <br>
+        <input name="listing[image]" class="input" placeholder="Iner image URL link">
+    </div>
+        <br>
+    <div>
+        <label for="Enter Price">Enter Price </label>
+        <br>
+        <input type="number" name="listing[price]" class="input" placeholder="1000">
+    </div>
+        <br>
+    <div>
+        <label for="Enter Location">Enter Location</label>
+        <br>
+        <input type="text" name="listing[location]" class="input" placeholder="Daramshala,Jaypur">
+    </div>
+        <br>
+    <div>
+        <label for="Country">Country Name</label>
+        <br>
+        <input type="text" name="listing[country]" class="input" placeholder="India">
+    </div>
+        <br>
+        <br>
+        <button id="newBtn">Add Details</button>
+        <br>
+        <br>
+    </form>
+</div>
+</body>

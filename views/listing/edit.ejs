@@ -1,0 +1,48 @@
+<%layout("/layouts/boilerplate.ejs")%>
+    <h3 class="new" id="heading">Update your listing</h3>
+    <div class="new">
+    <form method="POST" action="/listings/<%=listing._id%>?_method=PUT">
+    <div>
+        <label for="<%= listing.title %>">Title</label>
+        <br>
+        <input name="listing[title]" value="<%= listing.title %>" type="text" class="input">
+    </div>
+        <br>
+    <div>
+        <label for="listing[discription]">Description</label>
+        <br>
+        <textarea type="text" name="listing[discription]" class="input">"<%= listing.discription %>"</textarea>
+    </div>
+        <br>
+    <div>
+        <label for="listing[image]">Image URL</label>
+        <br>
+        <input name="listing[image]" value="<%= listing.image %>" class="input" >
+    </div>
+        <br>
+    <div>
+        <label for="listing[price]">Enter Price</label>
+        <br>
+        <input type="number" name="listing[price]" value="<%= listing.price %>" class="input">
+    </div>
+        <br>
+    <div>
+        <label for="listing[location]">Enter Location</label>
+        <br>
+        <input type="text" name="listing[location]" value="<%= listing.location %>" class="input">
+    </div>
+        <br>
+    <div>
+        <label for="listing[country]">Enter Country Name</label>
+        <br>
+        <input type="text" name="listing[country]" value="<%= listing.country %>" class="input">
+    </div>
+        <br>
+        <br>
+        <button id="newBtn"> Edit Details </button>
+        <br>
+        <br>
+    </form>
+</div>
+</body>
+
